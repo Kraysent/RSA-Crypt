@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace RSACrypt.src
@@ -24,6 +19,13 @@ namespace RSACrypt.src
         private void EncryptMenu_Click(object sender, EventArgs e)
         {
             Encrypt();
+        }
+
+        private void KeysCreateMenu_Click(object sender, EventArgs e)
+        {
+            KeysGenerationForm keysGeneration = new KeysGenerationForm();
+
+            keysGeneration.ShowDialog();
         }
 
         private void ExitMenu_Click(object sender, EventArgs e)

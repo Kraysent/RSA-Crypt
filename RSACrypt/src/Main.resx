@@ -117,7 +117,309 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="MainTextbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>10, 27</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="MainTextbox.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="MainTextbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>668, 360</value>
+  </data>
+  <data name="MainTextbox.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;MainTextbox.Name" xml:space="preserve">
+    <value>MainTextbox</value>
+  </data>
+  <data name="&gt;&gt;MainTextbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;MainTextbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;MainTextbox.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Version_Label.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Version_Label.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9pt</value>
+  </data>
+  <data name="Version_Label.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 390</value>
+  </data>
+  <data name="Version_Label.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 15</value>
+  </data>
+  <data name="Version_Label.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="Version_Label.Text" xml:space="preserve">
+    <value>Version: v.1.0 alpha</value>
+  </data>
+  <data name="&gt;&gt;Version_Label.Name" xml:space="preserve">
+    <value>Version_Label</value>
+  </data>
+  <data name="&gt;&gt;Version_Label.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Version_Label.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Version_Label.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ContactsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="ContactsMenu.Text" xml:space="preserve">
+    <value>Contacts</value>
+  </data>
+  <data name="DocsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="DocsMenu.Text" xml:space="preserve">
+    <value>Documentation</value>
+  </data>
+  <data name="AboutMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>157, 22</value>
+  </data>
+  <data name="AboutMenu.Text" xml:space="preserve">
+    <value>About program</value>
+  </data>
+  <data name="HelpMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="HelpMenu.Text" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="IntegrityMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="IntegrityMenu.Text" xml:space="preserve">
+    <value>Check integrity</value>
+  </data>
+  <data name="SignatureMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="SignatureMenu.Text" xml:space="preserve">
+    <value>Add signature</value>
+  </data>
+  <data name="DecryptMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="DecryptMenu.Text" xml:space="preserve">
+    <value>Decrypt</value>
+  </data>
+  <data name="EncryptMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="EncryptMenu.Text" xml:space="preserve">
+    <value>Encrypt</value>
+  </data>
+  <data name="KeysCreateMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="KeysCreateMenu.Text" xml:space="preserve">
+    <value>Create pair of keys</value>
+  </data>
+  <data name="ChangeContactMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="ChangeContactMenu.Text" xml:space="preserve">
+    <value>Change contact</value>
+  </data>
+  <data name="ChangeKeyPairMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>171, 22</value>
+  </data>
+  <data name="ChangeKeyPairMenu.Text" xml:space="preserve">
+    <value>Change keys' pair</value>
+  </data>
+  <data name="OperationsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 20</value>
+  </data>
+  <data name="OperationsMenu.Text" xml:space="preserve">
+    <value>Operations</value>
+  </data>
   <metadata name="Main_Menu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="OpenOptionsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="OpenOptionsMenu.Text" xml:space="preserve">
+    <value>Open options</value>
+  </data>
+  <data name="SelectedKeysMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="SelectedKeysMenu.Text" xml:space="preserve">
+    <value>Selected keys</value>
+  </data>
+  <data name="UpdateMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="UpdateMenu.Text" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="OptionsMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="OptionsMenu.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="ExitMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 20</value>
+  </data>
+  <data name="ExitMenu.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Main_Menu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Main_Menu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>690, 24</value>
+  </data>
+  <data name="Main_Menu.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="Main_Menu.Text" xml:space="preserve">
+    <value>Main Menu</value>
+  </data>
+  <data name="&gt;&gt;Main_Menu.Name" xml:space="preserve">
+    <value>Main_Menu</value>
+  </data>
+  <data name="&gt;&gt;Main_Menu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Main_Menu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Main_Menu.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>690, 416</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>RSA Crypt</value>
+  </data>
+  <data name="&gt;&gt;ContactsMenu.Name" xml:space="preserve">
+    <value>ContactsMenu</value>
+  </data>
+  <data name="&gt;&gt;ContactsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HelpMenu.Name" xml:space="preserve">
+    <value>HelpMenu</value>
+  </data>
+  <data name="&gt;&gt;HelpMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DocsMenu.Name" xml:space="preserve">
+    <value>DocsMenu</value>
+  </data>
+  <data name="&gt;&gt;DocsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AboutMenu.Name" xml:space="preserve">
+    <value>AboutMenu</value>
+  </data>
+  <data name="&gt;&gt;AboutMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;IntegrityMenu.Name" xml:space="preserve">
+    <value>IntegrityMenu</value>
+  </data>
+  <data name="&gt;&gt;IntegrityMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SignatureMenu.Name" xml:space="preserve">
+    <value>SignatureMenu</value>
+  </data>
+  <data name="&gt;&gt;SignatureMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DecryptMenu.Name" xml:space="preserve">
+    <value>DecryptMenu</value>
+  </data>
+  <data name="&gt;&gt;DecryptMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;EncryptMenu.Name" xml:space="preserve">
+    <value>EncryptMenu</value>
+  </data>
+  <data name="&gt;&gt;EncryptMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KeysCreateMenu.Name" xml:space="preserve">
+    <value>KeysCreateMenu</value>
+  </data>
+  <data name="&gt;&gt;KeysCreateMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChangeContactMenu.Name" xml:space="preserve">
+    <value>ChangeContactMenu</value>
+  </data>
+  <data name="&gt;&gt;ChangeContactMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ChangeKeyPairMenu.Name" xml:space="preserve">
+    <value>ChangeKeyPairMenu</value>
+  </data>
+  <data name="&gt;&gt;ChangeKeyPairMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OperationsMenu.Name" xml:space="preserve">
+    <value>OperationsMenu</value>
+  </data>
+  <data name="&gt;&gt;OperationsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OptionsMenu.Name" xml:space="preserve">
+    <value>OptionsMenu</value>
+  </data>
+  <data name="&gt;&gt;OptionsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;OpenOptionsMenu.Name" xml:space="preserve">
+    <value>OpenOptionsMenu</value>
+  </data>
+  <data name="&gt;&gt;OpenOptionsMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SelectedKeysMenu.Name" xml:space="preserve">
+    <value>SelectedKeysMenu</value>
+  </data>
+  <data name="&gt;&gt;SelectedKeysMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UpdateMenu.Name" xml:space="preserve">
+    <value>UpdateMenu</value>
+  </data>
+  <data name="&gt;&gt;UpdateMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ExitMenu.Name" xml:space="preserve">
+    <value>ExitMenu</value>
+  </data>
+  <data name="&gt;&gt;ExitMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>Main</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

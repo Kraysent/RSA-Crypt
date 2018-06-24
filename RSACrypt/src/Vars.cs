@@ -9,6 +9,7 @@ namespace RSACrypt.src
     class Vars
     {
         public const char SplitChar = ' ';
+        public const char KeySplitChar = '+';
 
         public static Key ContactPublicKey;
         public static Key UserPrivateKey;
