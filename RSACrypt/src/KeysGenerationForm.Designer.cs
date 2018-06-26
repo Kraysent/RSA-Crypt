@@ -65,6 +65,7 @@
             // 
             // KeysLengthCombobox
             // 
+            this.KeysLengthCombobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.KeysLengthCombobox.FormattingEnabled = true;
             this.KeysLengthCombobox.Location = new System.Drawing.Point(122, 104);
             this.KeysLengthCombobox.Name = "KeysLengthCombobox";

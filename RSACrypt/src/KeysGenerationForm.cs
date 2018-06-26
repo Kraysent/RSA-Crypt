@@ -23,6 +23,11 @@ namespace RSACrypt.src
         {
             PasswordTextbox.PasswordChar = '*';
             ConfirmTextbox.PasswordChar = '*';
+
+            KeysLengthCombobox.Items.Add("512");
+            KeysLengthCombobox.Items.Add("1024");
+            KeysLengthCombobox.Items.Add("2048");
+            KeysLengthCombobox.SelectedIndex = 0;
         }
 
         private void OpenDirectoryButton_Click(object sender, EventArgs e)
@@ -52,7 +57,7 @@ namespace RSACrypt.src
 
             if (Directory.Exists(outputPath) == true)
             {
-                OpenDirTextbox.Text = folderDialog.SelectedPath + "\\";
+                OpenDirTextbox.Text = folderDialog.SelectedPath;
             }
         }
 
@@ -65,7 +70,7 @@ namespace RSACrypt.src
         {
             Key[] generatedKeys;
             string username, password, passwordConfirm, dirPath, outputFileName;
-            int keysLength = 1024;
+            int keysLength = 512;
 
             //-----Username check-----//
 
@@ -100,16 +105,28 @@ namespace RSACrypt.src
                 return;
             }
 
+            //-----Keys length check-----//
+
+            switch (KeysLengthCombobox.Text)
+            {
+                case "512":
+                    keysLength = 512;
+                    break;
+                case "1024":
+                    keysLength = 1024;
+                    break;
+                case "2048":
+                    keysLength = 2048;
+                    break;
+            }
+
             //-----Directory path check-----//
 
             dirPath = OpenDirTextbox.Text;
 
             if (Directory.Exists(dirPath) != true)
             {
-                if (dirPath[dirPath.Length - 1] != '\\')
-                {
-                    MessageBox.Show("Directory does not exists!", "Error!");
-                }
+                MessageBox.Show("Directory does not exists!", "Error!");
 
                 return;
             }
@@ -120,12 +137,10 @@ namespace RSACrypt.src
 
             //-----Keys output-----//
 
-            outputFileName = username + "_" + keysLength + "_" + DateTime.Now.ToString("ddMMyyyy-hh:mm:ss") + "_";
-            File.WriteAllLines(dirPath + outputFileName + "public", generatedKeys[0].ToFileFormat());
-            File.WriteAllLines(dirPath + outputFileName + "private", generatedKeys[1].ToFileFormat());
+            outputFileName = username + "_" + keysLength + "_" + DateTime.Now.ToString("ddMMyyyy-hhmmss") + "_";
+            File.WriteAllLines(dirPath + outputFileName + "public.pub", generatedKeys[0].ToFileFormat());
+            File.WriteAllLines(dirPath + outputFileName + "private.priv", generatedKeys[1].ToFileFormat());
             MessageBox.Show("Keys were successfully generated! They are saved to following directory: \n" + dirPath, "Keys were successfully generated!");
-
-
         }
     }
 }

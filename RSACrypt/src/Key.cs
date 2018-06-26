@@ -1,5 +1,6 @@
 ﻿using System;
-using System.Threading;
+using System.Collections.Generic;
+using System.Security.Cryptography;
 using System.Windows.Forms;
 using System.Numerics;
 
@@ -83,7 +84,6 @@ namespace RSACrypt.src
                 
                 while (MillerRubenTest(p) != true)
                 {
-                    MessageBox.Show("p = " + p + "\nq = " + q + "\nExp = " + publicExp);
                     p = RandomNumber(keysLength);
                     p = GettingPrimeLoop(p);
                 }
@@ -109,9 +109,9 @@ namespace RSACrypt.src
             outputKeyArray[0] = new Key(publicExp, modulus, "pub", username, passwordHash);   //Public Key
             outputKeyArray[1] = new Key(privateExp, modulus, "priv", username, passwordHash); //Private Key
 
-            return null;
+            return outputKeyArray;
         }
-
+        
         /// <summary>
         /// Gets random number
         /// </summary>
@@ -124,6 +124,7 @@ namespace RSACrypt.src
             Random rnd = new Random();
             byte[] cXHash = Vars.ComputeHash(cursorX.ToString()), cYHash = Vars.ComputeHash(cursorY.ToString()), timeHash = Vars.ComputeHash(currentTimeMs.ToString());
             string resNumStr = "";
+            BigInteger outputNumber;
 
             for (i = 0; i < length; i++)
             {
@@ -142,12 +143,17 @@ namespace RSACrypt.src
                         resNumStr += (timeHash[currentNumRnd] * rnd.Next(8)).ToString()[0];
                         break;
                 }
+            }
+            
+            Vars.Pause(100);
+            outputNumber = BigInteger.Abs(BigInteger.Parse(resNumStr));
 
-                //MessageBox.Show(resNumStr);
+            if (outputNumber.IsEven == true)
+            {
+                outputNumber++;
             }
 
-            Thread.Sleep(100);
-            return BigInteger.Parse(resNumStr);
+            return outputNumber;
         }
 
         /// <summary>
@@ -163,11 +169,6 @@ namespace RSACrypt.src
             string rndLine = "";
             bool iterFlag = false;
 
-            if (number.IsEven == true)
-            {
-                number++;
-            }
-
             k = number.ToString().Length;
             t = number - 1;
 
@@ -179,7 +180,12 @@ namespace RSACrypt.src
 
             for (i = 0; i < k; i++)
             {
-                for (j = 0; j < number.ToString().Length - 1; j++)
+                if (i >= k)
+                {
+                    break;
+                }
+
+                for (j = 0; j < rnd.Next(2, number.ToString().Length - 2); j++)
                 {
                     rndLine += rnd.Next(0, 9);
                 }
@@ -192,7 +198,7 @@ namespace RSACrypt.src
                     continue;
                 }
 
-                for (j = 0; j < s - 1; i++)
+                for (j = 0; j < s - 1; j++)
                 {
                     x = BigInteger.ModPow(x, 2, number);
 
@@ -228,7 +234,7 @@ namespace RSACrypt.src
         private static BigInteger GettingPrimeLoop(BigInteger number)
         {
             bool fl = false, fl1 = false;
-            BigInteger rem;
+            BigInteger rem = 0;
 
             while (fl1 == false)
             {
@@ -312,6 +318,5 @@ namespace RSACrypt.src
             x = x2;
             y = y2;
         }
-
     }
 }
