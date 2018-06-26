@@ -122,6 +122,7 @@
             // 
             this.ChangeKeyPairMenu.Name = "ChangeKeyPairMenu";
             resources.ApplyResources(this.ChangeKeyPairMenu, "ChangeKeyPairMenu");
+            this.ChangeKeyPairMenu.Click += new System.EventHandler(this.ChangeKeyPairMenu_Click);
             // 
             // OperationsMenu
             // 

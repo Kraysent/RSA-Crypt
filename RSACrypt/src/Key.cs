@@ -1,7 +1,7 @@
 ﻿using System;
+using System.Numerics;
 using System.Threading;
 using System.Windows.Forms;
-using System.Numerics;
 
 namespace RSACrypt.src
 {

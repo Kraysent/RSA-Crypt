@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading;
 using System.Windows.Forms;
 
 namespace RSACrypt.src
@@ -20,6 +19,11 @@ namespace RSACrypt.src
         {
             Encrypt();
         }
+        
+        private void ChangeKeyPairMenu_Click(object sender, EventArgs e)
+        {
+            ChangePair();
+        }
 
         private void KeysCreateMenu_Click(object sender, EventArgs e)
         {
@@ -28,7 +32,7 @@ namespace RSACrypt.src
 
         private void ExitMenu_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Exit();
         }
 
         private void Generate()
@@ -43,6 +47,16 @@ namespace RSACrypt.src
             string text = MainTextbox.Text;
 
             MainTextbox.Text = Vars.FormatEncryptedText(Vars.UserPrivateKey.Encrypt(text));
+        }
+
+        private void ChangePair()
+        {
+
+        }
+
+        private void Exit()
+        {
+            Application.Exit();
         }
     }
 }

@@ -132,7 +132,7 @@ namespace RSACrypt.src
             }
 
             //-----Generating keys-----//
-
+            
             generatedKeys = Key.GeneratePair(username, password, keysLength);
 
             //-----Keys output-----//

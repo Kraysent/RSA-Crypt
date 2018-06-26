@@ -198,43 +198,43 @@
     <value>Help</value>
   </data>
   <data name="IntegrityMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="IntegrityMenu.Text" xml:space="preserve">
     <value>Check integrity</value>
   </data>
   <data name="SignatureMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="SignatureMenu.Text" xml:space="preserve">
     <value>Add signature</value>
   </data>
   <data name="DecryptMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="DecryptMenu.Text" xml:space="preserve">
     <value>Decrypt</value>
   </data>
   <data name="EncryptMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="EncryptMenu.Text" xml:space="preserve">
     <value>Encrypt</value>
   </data>
   <data name="KeysCreateMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="KeysCreateMenu.Text" xml:space="preserve">
     <value>Create pair of keys</value>
   </data>
   <data name="ChangeContactMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ChangeContactMenu.Text" xml:space="preserve">
     <value>Change contact</value>
   </data>
   <data name="ChangeKeyPairMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>171, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="ChangeKeyPairMenu.Text" xml:space="preserve">
     <value>Change keys' pair</value>
