@@ -1,6 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Security.Cryptography;
+using System.Threading;
 using System.Windows.Forms;
 using System.Numerics;
 
@@ -60,6 +59,41 @@ namespace RSACrypt.src
             outputArray[2] = "-----END RSA CRYPT " + keyTypeText + " KEY-----";
 
             return outputArray;
+        }
+
+        /// <summary>
+        /// Encrypts the text using public Key
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public string Encrypt(string text)
+        {
+            byte[] textByteArray = Vars.ToByteArray(text);
+            string[] block = new string[100]; // biggest message
+            int j = 0;
+            BigInteger currentBIBlock = 0, Encrypted_Message;
+            string Output_Text = "";
+            Random Random_End = new Random();
+
+            for (int i = 0; i < textByteArray.Length; i++)
+            {
+                block[j] += textByteArray[i] + "987";
+
+                if (block[j].Length > Modulus.ToString().Length - 10)
+                {
+                    block[j] += Random_End.Next(0, 9);
+                    j++;
+                }
+            }
+
+            for (int i = 0; i <= j; i++)
+            {
+                currentBIBlock = BigInteger.Parse(block[i]);
+                Encrypted_Message = BigInteger.ModPow(currentBIBlock, Exponent, Modulus);
+                Output_Text += Encrypted_Message.ToString() + Vars.SplitChar;
+            }
+
+            return Output_Text;
         }
 
         //-----Static methods-----//
@@ -144,8 +178,8 @@ namespace RSACrypt.src
                         break;
                 }
             }
-            
-            Vars.Pause(100);
+
+            Thread.Sleep(10);
             outputNumber = BigInteger.Abs(BigInteger.Parse(resNumStr));
 
             if (outputNumber.IsEven == true)

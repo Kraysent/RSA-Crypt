@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
-using System.Diagnostics;
-using System.Text;
+﻿using System.Text;
 using System.Security.Cryptography;
 
 namespace RSACrypt.src
@@ -45,17 +40,21 @@ namespace RSACrypt.src
         {
             return (new SHA512Managed()).ComputeHash(byteArray);
         }
-        
+
         /// <summary>
-        /// Pauses program for selected number of ms
+        /// Converts encrypted text to machine-reading format
         /// </summary>
-        /// <param name="value"></param>
-        public static void Pause(int value)
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public static string FormatEncryptedText(string text)
         {
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
-            while (sw.ElapsedMilliseconds < value)
-                Application.DoEvents();
+            string outputText;
+            
+            outputText = "-----BEGIN RSA CRYPT ENCRYPTED MESSAGE-----\n";
+            outputText += text + "\n";
+            outputText += "-----END RSA CRYPT ENCRYPTED MESSAGE-----";
+
+            return outputText;
         }
     }
 }

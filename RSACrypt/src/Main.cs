@@ -23,9 +23,7 @@ namespace RSACrypt.src
 
         private void KeysCreateMenu_Click(object sender, EventArgs e)
         {
-            KeysGenerationForm keysGeneration = new KeysGenerationForm();
-
-            keysGeneration.ShowDialog();
+            Generate();
         }
 
         private void ExitMenu_Click(object sender, EventArgs e)
@@ -33,10 +31,18 @@ namespace RSACrypt.src
             Application.Exit();
         }
 
+        private void Generate()
+        {
+            KeysGenerationForm keysGeneration = new KeysGenerationForm();
+
+            keysGeneration.ShowDialog();
+        }
+
         private void Encrypt()
         {
             string text = MainTextbox.Text;
 
+            MainTextbox.Text = Vars.FormatEncryptedText(Vars.UserPrivateKey.Encrypt(text));
         }
     }
 }
