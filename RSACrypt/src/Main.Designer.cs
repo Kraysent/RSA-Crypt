@@ -35,7 +35,7 @@
             this.HelpMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.DocsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.AboutMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.IntegrityMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.CheckSignMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.SignatureMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.DecryptMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.EncryptMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -86,10 +86,10 @@
             this.AboutMenu.Name = "AboutMenu";
             resources.ApplyResources(this.AboutMenu, "AboutMenu");
             // 
-            // IntegrityMenu
+            // CheckSignMenu
             // 
-            this.IntegrityMenu.Name = "IntegrityMenu";
-            resources.ApplyResources(this.IntegrityMenu, "IntegrityMenu");
+            this.CheckSignMenu.Name = "CheckSignMenu";
+            resources.ApplyResources(this.CheckSignMenu, "CheckSignMenu");
             // 
             // SignatureMenu
             // 
@@ -133,7 +133,7 @@
             this.EncryptMenu,
             this.DecryptMenu,
             this.SignatureMenu,
-            this.IntegrityMenu});
+            this.CheckSignMenu});
             this.OperationsMenu.Name = "OperationsMenu";
             resources.ApplyResources(this.OperationsMenu, "OperationsMenu");
             // 
@@ -201,7 +201,7 @@
         private System.Windows.Forms.ToolStripMenuItem ContactsMenu;
         private System.Windows.Forms.ToolStripMenuItem HelpMenu;
         private System.Windows.Forms.ToolStripMenuItem DocsMenu;
-        private System.Windows.Forms.ToolStripMenuItem IntegrityMenu;
+        private System.Windows.Forms.ToolStripMenuItem CheckSignMenu;
         private System.Windows.Forms.ToolStripMenuItem SignatureMenu;
         private System.Windows.Forms.ToolStripMenuItem DecryptMenu;
         private System.Windows.Forms.ToolStripMenuItem EncryptMenu;

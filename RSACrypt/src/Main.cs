@@ -46,7 +46,7 @@ namespace RSACrypt.src
         {
             string text = MainTextbox.Text;
 
-            MainTextbox.Text = Vars.FormatEncryptedText(Vars.UserPrivateKey.Encrypt(text));
+            MainTextbox.Text = Options.FormatEncryptedText(Options.UserPrivateKey.Encrypt(text));
         }
 
         private void ChangePair()

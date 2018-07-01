@@ -1,14 +1,11 @@
-﻿using System;
+﻿using RSACryptLibrary;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace RSACrypt.src
 {
     class Config
     {
-        private string configPath = Directory.GetCurrentDirectory() + "/config.txt";
+        private static string configPath = Directory.GetCurrentDirectory() + "/config.txt";
         private const string lastPairBlockBegin = "_lastpairkeyb_";
         private const string lastPairBlockEnd = "_lastpairkeye_";
         private const string listPairBlockBegin = "_listofpairsb_";
@@ -18,7 +15,7 @@ namespace RSACrypt.src
         /// <summary>
         /// Creates configuration file
         /// </summary>
-        public void Create()
+        public static void Create()
         {
             int blocksNumber = 2;
             string[] initialContent = new string[blocksNumber * 2];
@@ -37,12 +34,12 @@ namespace RSACrypt.src
         /// </summary>
         /// <param name="pubKeyPath"></param>
         /// <param name="privKeyPath"></param>
-        public void AddPair(string pubKeyPath, string privKeyPath)
+        public static void AddPair(string pubKeyPath, string privKeyPath)
         {
             int i;
             string[] configContents;
 
-            if (CheckKey(pubKeyPath, "pub") == true && CheckKey(pubKeyPath, "priv") == true)
+            if (CheckKey(pubKeyPath, KeyType.Public) == true && CheckKey(privKeyPath, KeyType.Private) == true)
             {
                 if (File.Exists(configPath) != true)
                 {
@@ -75,7 +72,7 @@ namespace RSACrypt.src
         /// <param name="path"></param>
         /// <param name="keyType"></param>
         /// <returns></returns>
-        private bool CheckKey(string path, string keyType)
+        private static bool CheckKey(string path, KeyType keyType)
         {
             Key standartKey;
             string[] standartFormattedKey;
@@ -85,8 +82,8 @@ namespace RSACrypt.src
             if (File.Exists(path) == true)
             {
                 fileContents = File.ReadAllLines(path);
-                standartKey = new Key(0, 0, keyType, "user", Vars.ComputeHash("123"));
-                standartFormattedKey = standartKey.ToFileFormat();
+                standartKey = new Key(0, 0, keyType);
+                standartFormattedKey = Options.ToFileFormat(standartKey);
 
                 for (i = 0; i < fileContents.Length; i++)
                 {
@@ -121,7 +118,7 @@ namespace RSACrypt.src
         /// </summary>
         /// <param name="str"></param>
         /// <param name="lineIndex"></param>
-        private void InsertString(string str, int lineIndex)
+        private static void InsertString(string str, int lineIndex)
         {
             string[] configContents = File.ReadAllLines(configPath);
             string[] outpitConfig = new string[configContents.Length + 1];
@@ -148,7 +145,7 @@ namespace RSACrypt.src
         /// </summary>
         /// <param name="str"></param>
         /// <param name="lineIndex"></param>
-        private void ReplaceString(string str, int lineIndex)
+        private static void ReplaceString(string str, int lineIndex)
         {
             string[] configContents = File.ReadAllLines(configPath);
 

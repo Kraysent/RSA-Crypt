@@ -197,11 +197,11 @@
   <data name="HelpMenu.Text" xml:space="preserve">
     <value>Help</value>
   </data>
-  <data name="IntegrityMenu.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="CheckSignMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
   </data>
-  <data name="IntegrityMenu.Text" xml:space="preserve">
-    <value>Check integrity</value>
+  <data name="CheckSignMenu.Text" xml:space="preserve">
+    <value>Check signature</value>
   </data>
   <data name="SignatureMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 22</value>
@@ -338,10 +338,10 @@
   <data name="&gt;&gt;AboutMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;IntegrityMenu.Name" xml:space="preserve">
-    <value>IntegrityMenu</value>
+  <data name="&gt;&gt;CheckSignMenu.Name" xml:space="preserve">
+    <value>CheckSignMenu</value>
   </data>
-  <data name="&gt;&gt;IntegrityMenu.Type" xml:space="preserve">
+  <data name="&gt;&gt;CheckSignMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;SignatureMenu.Name" xml:space="preserve">
