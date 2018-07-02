@@ -126,7 +126,7 @@
     <value>True</value>
   </data>
   <data name="MainTextbox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>668, 360</value>
+    <value>592, 360</value>
   </data>
   <data name="MainTextbox.TabIndex" type="System.Int32, mscorlib">
     <value>17</value>
@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MainTextbox.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>3</value>
   </data>
   <data name="Version_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -159,7 +159,7 @@
     <value>14</value>
   </data>
   <data name="Version_Label.Text" xml:space="preserve">
-    <value>Version: v.1.0 alpha</value>
+    <value>Version: v.0.1 alpha</value>
   </data>
   <data name="&gt;&gt;Version_Label.Name" xml:space="preserve">
     <value>Version_Label</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Version_Label.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>4</value>
   </data>
   <data name="ContactsMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 22</value>
@@ -227,18 +227,6 @@
   <data name="KeysCreateMenu.Text" xml:space="preserve">
     <value>Create pair of keys</value>
   </data>
-  <data name="ChangeContactMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="ChangeContactMenu.Text" xml:space="preserve">
-    <value>Change contact</value>
-  </data>
-  <data name="ChangeKeyPairMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
-  </data>
-  <data name="ChangeKeyPairMenu.Text" xml:space="preserve">
-    <value>Change keys' pair</value>
-  </data>
   <data name="OperationsMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>77, 20</value>
   </data>
@@ -282,7 +270,7 @@
     <value>0, 0</value>
   </data>
   <data name="Main_Menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>690, 24</value>
+    <value>782, 24</value>
   </data>
   <data name="Main_Menu.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -300,7 +288,83 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Main_Menu.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="ContactListbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>609, 28</value>
+  </data>
+  <data name="ContactListbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 303</value>
+  </data>
+  <data name="ContactListbox.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;ContactListbox.Name" xml:space="preserve">
+    <value>ContactListbox</value>
+  </data>
+  <data name="&gt;&gt;ContactListbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ContactListbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ContactListbox.ZOrder" xml:space="preserve">
     <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="AddKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AddKeyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 334</value>
+  </data>
+  <data name="AddKeyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="AddKeyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="AddKeyButton.Text" xml:space="preserve">
+    <value>Add Key</value>
+  </data>
+  <data name="&gt;&gt;AddKeyButton.Name" xml:space="preserve">
+    <value>AddKeyButton</value>
+  </data>
+  <data name="&gt;&gt;AddKeyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddKeyButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AddKeyButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RemoveKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RemoveKeyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>608, 364</value>
+  </data>
+  <data name="RemoveKeyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="RemoveKeyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="RemoveKeyButton.Text" xml:space="preserve">
+    <value>Remove Key</value>
+  </data>
+  <data name="&gt;&gt;RemoveKeyButton.Name" xml:space="preserve">
+    <value>RemoveKeyButton</value>
+  </data>
+  <data name="&gt;&gt;RemoveKeyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RemoveKeyButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RemoveKeyButton.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -309,7 +373,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>690, 416</value>
+    <value>782, 416</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>RSA Crypt</value>
@@ -366,18 +430,6 @@
     <value>KeysCreateMenu</value>
   </data>
   <data name="&gt;&gt;KeysCreateMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChangeContactMenu.Name" xml:space="preserve">
-    <value>ChangeContactMenu</value>
-  </data>
-  <data name="&gt;&gt;ChangeContactMenu.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ChangeKeyPairMenu.Name" xml:space="preserve">
-    <value>ChangeKeyPairMenu</value>
-  </data>
-  <data name="&gt;&gt;ChangeKeyPairMenu.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;OperationsMenu.Name" xml:space="preserve">

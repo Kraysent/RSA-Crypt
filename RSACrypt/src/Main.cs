@@ -1,10 +1,15 @@
 ﻿using System;
+using RSACryptLibrary;
+using System.IO;
 using System.Windows.Forms;
+using System.Numerics;
 
 namespace RSACrypt.src
 {
     public partial class Main : Form
     {
+        //-----System methods-----//
+
         public Main()
         {
             InitializeComponent();
@@ -20,11 +25,6 @@ namespace RSACrypt.src
             Encrypt();
         }
         
-        private void ChangeKeyPairMenu_Click(object sender, EventArgs e)
-        {
-            ChangePair();
-        }
-
         private void KeysCreateMenu_Click(object sender, EventArgs e)
         {
             Generate();
@@ -34,6 +34,18 @@ namespace RSACrypt.src
         {
             Exit();
         }
+        
+        private void AddKeyButton_Click(object sender, EventArgs e)
+        {
+            AddKey();
+        }
+
+        private void DecryptMenu_Click(object sender, EventArgs e)
+        {
+            Decrypt();
+        }
+
+        //-----Non-system methods-----//
 
         private void Generate()
         {
@@ -46,12 +58,27 @@ namespace RSACrypt.src
         {
             string text = MainTextbox.Text;
 
-            MainTextbox.Text = Options.FormatEncryptedText(Options.UserPrivateKey.Encrypt(text));
+            MainTextbox.Text = Options.ContactPublicKey.Encrypt(text);
         }
 
-        private void ChangePair()
+        private void Decrypt()
         {
+            string text = MainTextbox.Text;
 
+            MainTextbox.Text = Options.UserPrivateKey.Decrypt(text);
+        }
+
+        private void AddKey()
+        {
+            OpenFileDialog openKeyDialog = new OpenFileDialog();
+            string[] fileContent;
+            Key currentKey;
+
+            openKeyDialog.Multiselect = false;
+            openKeyDialog.ShowDialog();
+            fileContent = File.ReadAllLines(openKeyDialog.FileName)[1].Split('+');
+            currentKey = new Key(BigInteger.Parse(fileContent[0]), BigInteger.Parse(fileContent[1]), KeyType.Public);
+            Options.ContactPublicKey = currentKey;
         }
 
         private void Exit()

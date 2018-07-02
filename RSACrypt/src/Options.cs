@@ -42,23 +42,7 @@ namespace RSACrypt.src
         {
             return (new SHA512Managed()).ComputeHash(byteArray);
         }
-
-        /// <summary>
-        /// Converts encrypted text to machine-reading format
-        /// </summary>
-        /// <param name="text"></param>
-        /// <returns></returns>
-        public static string FormatEncryptedText(string text)
-        {
-            string outputText;
-            
-            outputText = "-----BEGIN RSA CRYPT ENCRYPTED MESSAGE-----\n";
-            outputText += text + "\n";
-            outputText += "-----END RSA CRYPT ENCRYPTED MESSAGE-----";
-
-            return outputText;
-        }
-
+        
         /// <summary>
         /// Converts current key to computer-readable format
         /// </summary>

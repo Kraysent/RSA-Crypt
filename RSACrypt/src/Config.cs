@@ -6,10 +6,10 @@ namespace RSACrypt.src
     class Config
     {
         private static string configPath = Directory.GetCurrentDirectory() + "/config.txt";
-        private const string lastPairBlockBegin = "_lastpairkeyb_";
-        private const string lastPairBlockEnd = "_lastpairkeye_";
-        private const string listPairBlockBegin = "_listofpairsb_";
-        private const string listPairBlockEnd = "_listofpairse_";
+        private const string lastPairBlockBegin = "_lastprivkeyb_";
+        private const string lastPairBlockEnd = "_lastprivkeye_";
+        private const string listPairBlockBegin = "_listofkeysb_";
+        private const string listPairBlockEnd = "_listofkeyse_";
         private const char pathsSpliChar = ':';
 
         /// <summary>

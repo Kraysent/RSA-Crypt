@@ -11,7 +11,6 @@ D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\RSACrypt.src.KeysGenerationForm.resourc
 D:\Coding\C#\RSACrypt\RSACrypt\bin\Debug\yo\RSACrypt.resources.dll
 D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\RSACrypt.src.Main.yo.resources
 D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\yo\RSACrypt.resources.dll
-D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\RSACrypt.src.ChangePairForm.resources
 D:\Coding\C#\RSACrypt\RSACrypt\bin\Debug\RSACryptLibrary.dll
 D:\Coding\C#\RSACrypt\RSACrypt\bin\Debug\RSACryptLibrary.pdb
 D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\RSACrypt.csproj.CopyComplete

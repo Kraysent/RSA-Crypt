@@ -40,8 +40,6 @@
             this.DecryptMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.EncryptMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.KeysCreateMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangeContactMenu = new System.Windows.Forms.ToolStripMenuItem();
-            this.ChangeKeyPairMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.OperationsMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.Main_Menu = new System.Windows.Forms.MenuStrip();
             this.OptionsMenu = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,6 +47,9 @@
             this.SelectedKeysMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.UpdateMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.ContactListbox = new System.Windows.Forms.ListBox();
+            this.AddKeyButton = new System.Windows.Forms.Button();
+            this.RemoveKeyButton = new System.Windows.Forms.Button();
             this.Main_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,6 +101,7 @@
             // 
             this.DecryptMenu.Name = "DecryptMenu";
             resources.ApplyResources(this.DecryptMenu, "DecryptMenu");
+            this.DecryptMenu.Click += new System.EventHandler(this.DecryptMenu_Click);
             // 
             // EncryptMenu
             // 
@@ -113,22 +115,9 @@
             resources.ApplyResources(this.KeysCreateMenu, "KeysCreateMenu");
             this.KeysCreateMenu.Click += new System.EventHandler(this.KeysCreateMenu_Click);
             // 
-            // ChangeContactMenu
-            // 
-            this.ChangeContactMenu.Name = "ChangeContactMenu";
-            resources.ApplyResources(this.ChangeContactMenu, "ChangeContactMenu");
-            // 
-            // ChangeKeyPairMenu
-            // 
-            this.ChangeKeyPairMenu.Name = "ChangeKeyPairMenu";
-            resources.ApplyResources(this.ChangeKeyPairMenu, "ChangeKeyPairMenu");
-            this.ChangeKeyPairMenu.Click += new System.EventHandler(this.ChangeKeyPairMenu_Click);
-            // 
             // OperationsMenu
             // 
             this.OperationsMenu.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ChangeKeyPairMenu,
-            this.ChangeContactMenu,
             this.KeysCreateMenu,
             this.EncryptMenu,
             this.DecryptMenu,
@@ -177,10 +166,32 @@
             resources.ApplyResources(this.ExitMenu, "ExitMenu");
             this.ExitMenu.Click += new System.EventHandler(this.ExitMenu_Click);
             // 
+            // ContactListbox
+            // 
+            this.ContactListbox.FormattingEnabled = true;
+            resources.ApplyResources(this.ContactListbox, "ContactListbox");
+            this.ContactListbox.Name = "ContactListbox";
+            // 
+            // AddKeyButton
+            // 
+            resources.ApplyResources(this.AddKeyButton, "AddKeyButton");
+            this.AddKeyButton.Name = "AddKeyButton";
+            this.AddKeyButton.UseVisualStyleBackColor = true;
+            this.AddKeyButton.Click += new System.EventHandler(this.AddKeyButton_Click);
+            // 
+            // RemoveKeyButton
+            // 
+            resources.ApplyResources(this.RemoveKeyButton, "RemoveKeyButton");
+            this.RemoveKeyButton.Name = "RemoveKeyButton";
+            this.RemoveKeyButton.UseVisualStyleBackColor = true;
+            // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.RemoveKeyButton);
+            this.Controls.Add(this.AddKeyButton);
+            this.Controls.Add(this.ContactListbox);
             this.Controls.Add(this.MainTextbox);
             this.Controls.Add(this.Version_Label);
             this.Controls.Add(this.Main_Menu);
@@ -206,8 +217,6 @@
         private System.Windows.Forms.ToolStripMenuItem DecryptMenu;
         private System.Windows.Forms.ToolStripMenuItem EncryptMenu;
         private System.Windows.Forms.ToolStripMenuItem KeysCreateMenu;
-        private System.Windows.Forms.ToolStripMenuItem ChangeContactMenu;
-        private System.Windows.Forms.ToolStripMenuItem ChangeKeyPairMenu;
         private System.Windows.Forms.ToolStripMenuItem OperationsMenu;
         private System.Windows.Forms.MenuStrip Main_Menu;
         private System.Windows.Forms.ToolStripMenuItem OptionsMenu;
@@ -216,6 +225,9 @@
         private System.Windows.Forms.ToolStripMenuItem UpdateMenu;
         private System.Windows.Forms.ToolStripMenuItem ExitMenu;
         private System.Windows.Forms.ToolStripMenuItem AboutMenu;
+        private System.Windows.Forms.ListBox ContactListbox;
+        private System.Windows.Forms.Button AddKeyButton;
+        private System.Windows.Forms.Button RemoveKeyButton;
     }
 }
 
