@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Numerics;
+using System.Collections.Generic;
 using System.Security.Cryptography;
 using RSACryptLibrary;
 
@@ -12,6 +13,8 @@ namespace RSACrypt.src
         
         public static Key UserPrivateKey;
         public static Key ContactPublicKey;
+        public static List<Key> UsersList = new List<Key>();
+        public static List<Key> ContactsList = new List<Key>();
 
         /// <summary>
         /// Converts text to byte array

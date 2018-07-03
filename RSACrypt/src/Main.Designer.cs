@@ -48,8 +48,11 @@
             this.UpdateMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.ExitMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.ContactListbox = new System.Windows.Forms.ListBox();
-            this.AddKeyButton = new System.Windows.Forms.Button();
-            this.RemoveKeyButton = new System.Windows.Forms.Button();
+            this.AddPublicKeyButton = new System.Windows.Forms.Button();
+            this.RemovePublicKeyButton = new System.Windows.Forms.Button();
+            this.RemovePrivateKeyButton = new System.Windows.Forms.Button();
+            this.AddPrivateKeyButton = new System.Windows.Forms.Button();
+            this.UserListbox = new System.Windows.Forms.ListBox();
             this.Main_Menu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,26 +174,48 @@
             this.ContactListbox.FormattingEnabled = true;
             resources.ApplyResources(this.ContactListbox, "ContactListbox");
             this.ContactListbox.Name = "ContactListbox";
+            this.ContactListbox.SelectedIndexChanged += new System.EventHandler(this.ContactListbox_SelectedIndexChanged);
             // 
-            // AddKeyButton
+            // AddPublicKeyButton
             // 
-            resources.ApplyResources(this.AddKeyButton, "AddKeyButton");
-            this.AddKeyButton.Name = "AddKeyButton";
-            this.AddKeyButton.UseVisualStyleBackColor = true;
-            this.AddKeyButton.Click += new System.EventHandler(this.AddKeyButton_Click);
+            resources.ApplyResources(this.AddPublicKeyButton, "AddPublicKeyButton");
+            this.AddPublicKeyButton.Name = "AddPublicKeyButton";
+            this.AddPublicKeyButton.UseVisualStyleBackColor = true;
+            this.AddPublicKeyButton.Click += new System.EventHandler(this.AddKeyButton_Click);
             // 
-            // RemoveKeyButton
+            // RemovePublicKeyButton
             // 
-            resources.ApplyResources(this.RemoveKeyButton, "RemoveKeyButton");
-            this.RemoveKeyButton.Name = "RemoveKeyButton";
-            this.RemoveKeyButton.UseVisualStyleBackColor = true;
+            resources.ApplyResources(this.RemovePublicKeyButton, "RemovePublicKeyButton");
+            this.RemovePublicKeyButton.Name = "RemovePublicKeyButton";
+            this.RemovePublicKeyButton.UseVisualStyleBackColor = true;
+            // 
+            // RemovePrivateKeyButton
+            // 
+            resources.ApplyResources(this.RemovePrivateKeyButton, "RemovePrivateKeyButton");
+            this.RemovePrivateKeyButton.Name = "RemovePrivateKeyButton";
+            this.RemovePrivateKeyButton.UseVisualStyleBackColor = true;
+            // 
+            // AddPrivateKeyButton
+            // 
+            resources.ApplyResources(this.AddPrivateKeyButton, "AddPrivateKeyButton");
+            this.AddPrivateKeyButton.Name = "AddPrivateKeyButton";
+            this.AddPrivateKeyButton.UseVisualStyleBackColor = true;
+            // 
+            // UserListbox
+            // 
+            this.UserListbox.FormattingEnabled = true;
+            resources.ApplyResources(this.UserListbox, "UserListbox");
+            this.UserListbox.Name = "UserListbox";
             // 
             // Main
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.RemoveKeyButton);
-            this.Controls.Add(this.AddKeyButton);
+            this.Controls.Add(this.RemovePrivateKeyButton);
+            this.Controls.Add(this.AddPrivateKeyButton);
+            this.Controls.Add(this.UserListbox);
+            this.Controls.Add(this.RemovePublicKeyButton);
+            this.Controls.Add(this.AddPublicKeyButton);
             this.Controls.Add(this.ContactListbox);
             this.Controls.Add(this.MainTextbox);
             this.Controls.Add(this.Version_Label);
@@ -226,8 +251,11 @@
         private System.Windows.Forms.ToolStripMenuItem ExitMenu;
         private System.Windows.Forms.ToolStripMenuItem AboutMenu;
         private System.Windows.Forms.ListBox ContactListbox;
-        private System.Windows.Forms.Button AddKeyButton;
-        private System.Windows.Forms.Button RemoveKeyButton;
+        private System.Windows.Forms.Button AddPublicKeyButton;
+        private System.Windows.Forms.Button RemovePublicKeyButton;
+        private System.Windows.Forms.Button RemovePrivateKeyButton;
+        private System.Windows.Forms.Button AddPrivateKeyButton;
+        private System.Windows.Forms.ListBox UserListbox;
     }
 }
 

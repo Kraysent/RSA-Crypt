@@ -44,6 +44,11 @@ namespace RSACrypt.src
         {
             Decrypt();
         }
+        
+        private void ContactListbox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateList();
+        }
 
         //-----Non-system methods-----//
 
@@ -72,13 +77,26 @@ namespace RSACrypt.src
         {
             OpenFileDialog openKeyDialog = new OpenFileDialog();
             string[] fileContent;
+            string username;
             Key currentKey;
+            UsernameAskForm usernameAsk = new UsernameAskForm();
 
             openKeyDialog.Multiselect = false;
             openKeyDialog.ShowDialog();
             fileContent = File.ReadAllLines(openKeyDialog.FileName)[1].Split('+');
             currentKey = new Key(BigInteger.Parse(fileContent[0]), BigInteger.Parse(fileContent[1]), KeyType.Public);
             Options.ContactPublicKey = currentKey;
+            usernameAsk.ShowDialog();
+            username = usernameAsk.Username;
+
+            Options.ContactsList.Add(currentKey);
+            ContactListbox.Items.Add(username);
+            ContactListbox.SelectedIndex = Options.ContactsList.Count - 1;
+        }
+
+        private void UpdateList()
+        {
+            Options.ContactPublicKey = Options.ContactsList[ContactListbox.SelectedIndex];
         }
 
         private void Exit()

@@ -14,3 +14,4 @@ D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\yo\RSACrypt.resources.dll
 D:\Coding\C#\RSACrypt\RSACrypt\bin\Debug\RSACryptLibrary.dll
 D:\Coding\C#\RSACrypt\RSACrypt\bin\Debug\RSACryptLibrary.pdb
 D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\RSACrypt.csproj.CopyComplete
+D:\Coding\C#\RSACrypt\RSACrypt\obj\Debug\RSACrypt.src.UsernameAskForm.resources

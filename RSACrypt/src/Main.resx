@@ -141,7 +141,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;MainTextbox.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>6</value>
   </data>
   <data name="Version_Label.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -171,7 +171,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Version_Label.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>7</value>
   </data>
   <data name="ContactsMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 22</value>
@@ -198,31 +198,31 @@
     <value>Help</value>
   </data>
   <data name="CheckSignMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="CheckSignMenu.Text" xml:space="preserve">
     <value>Check signature</value>
   </data>
   <data name="SignatureMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="SignatureMenu.Text" xml:space="preserve">
     <value>Add signature</value>
   </data>
   <data name="DecryptMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="DecryptMenu.Text" xml:space="preserve">
     <value>Decrypt</value>
   </data>
   <data name="EncryptMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="EncryptMenu.Text" xml:space="preserve">
     <value>Encrypt</value>
   </data>
   <data name="KeysCreateMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>171, 22</value>
   </data>
   <data name="KeysCreateMenu.Text" xml:space="preserve">
     <value>Create pair of keys</value>
@@ -270,7 +270,7 @@
     <value>0, 0</value>
   </data>
   <data name="Main_Menu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>782, 24</value>
+    <value>947, 24</value>
   </data>
   <data name="Main_Menu.TabIndex" type="System.Int32, mscorlib">
     <value>12</value>
@@ -288,7 +288,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Main_Menu.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>8</value>
   </data>
   <data name="ContactListbox.Location" type="System.Drawing.Point, System.Drawing">
     <value>609, 28</value>
@@ -309,62 +309,137 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ContactListbox.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>5</value>
   </data>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="AddKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="AddPublicKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="AddKeyButton.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="AddPublicKeyButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>608, 334</value>
   </data>
-  <data name="AddKeyButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AddPublicKeyButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 23</value>
   </data>
-  <data name="AddKeyButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="AddPublicKeyButton.TabIndex" type="System.Int32, mscorlib">
     <value>19</value>
   </data>
-  <data name="AddKeyButton.Text" xml:space="preserve">
-    <value>Add Key</value>
+  <data name="AddPublicKeyButton.Text" xml:space="preserve">
+    <value>Add Public Key</value>
   </data>
-  <data name="&gt;&gt;AddKeyButton.Name" xml:space="preserve">
-    <value>AddKeyButton</value>
+  <data name="&gt;&gt;AddPublicKeyButton.Name" xml:space="preserve">
+    <value>AddPublicKeyButton</value>
   </data>
-  <data name="&gt;&gt;AddKeyButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;AddPublicKeyButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;AddKeyButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;AddPublicKeyButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;AddKeyButton.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;AddPublicKeyButton.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
-  <data name="RemoveKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="RemovePublicKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="RemoveKeyButton.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="RemovePublicKeyButton.Location" type="System.Drawing.Point, System.Drawing">
     <value>608, 364</value>
   </data>
-  <data name="RemoveKeyButton.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="RemovePublicKeyButton.Size" type="System.Drawing.Size, System.Drawing">
     <value>161, 23</value>
   </data>
-  <data name="RemoveKeyButton.TabIndex" type="System.Int32, mscorlib">
+  <data name="RemovePublicKeyButton.TabIndex" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
-  <data name="RemoveKeyButton.Text" xml:space="preserve">
-    <value>Remove Key</value>
+  <data name="RemovePublicKeyButton.Text" xml:space="preserve">
+    <value>Remove Public Key</value>
   </data>
-  <data name="&gt;&gt;RemoveKeyButton.Name" xml:space="preserve">
-    <value>RemoveKeyButton</value>
+  <data name="&gt;&gt;RemovePublicKeyButton.Name" xml:space="preserve">
+    <value>RemovePublicKeyButton</value>
   </data>
-  <data name="&gt;&gt;RemoveKeyButton.Type" xml:space="preserve">
+  <data name="&gt;&gt;RemovePublicKeyButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;RemoveKeyButton.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RemovePublicKeyButton.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;RemoveKeyButton.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RemovePublicKeyButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RemovePrivateKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="RemovePrivateKeyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 364</value>
+  </data>
+  <data name="RemovePrivateKeyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="RemovePrivateKeyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="RemovePrivateKeyButton.Text" xml:space="preserve">
+    <value>Remove Private Key</value>
+  </data>
+  <data name="&gt;&gt;RemovePrivateKeyButton.Name" xml:space="preserve">
+    <value>RemovePrivateKeyButton</value>
+  </data>
+  <data name="&gt;&gt;RemovePrivateKeyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RemovePrivateKeyButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;RemovePrivateKeyButton.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="AddPrivateKeyButton.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="AddPrivateKeyButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>775, 334</value>
+  </data>
+  <data name="AddPrivateKeyButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 23</value>
+  </data>
+  <data name="AddPrivateKeyButton.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="AddPrivateKeyButton.Text" xml:space="preserve">
+    <value>Add Private Key</value>
+  </data>
+  <data name="&gt;&gt;AddPrivateKeyButton.Name" xml:space="preserve">
+    <value>AddPrivateKeyButton</value>
+  </data>
+  <data name="&gt;&gt;AddPrivateKeyButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;AddPrivateKeyButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;AddPrivateKeyButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="UserListbox.Location" type="System.Drawing.Point, System.Drawing">
+    <value>776, 28</value>
+  </data>
+  <data name="UserListbox.Size" type="System.Drawing.Size, System.Drawing">
+    <value>161, 303</value>
+  </data>
+  <data name="UserListbox.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;UserListbox.Name" xml:space="preserve">
+    <value>UserListbox</value>
+  </data>
+  <data name="&gt;&gt;UserListbox.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UserListbox.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;UserListbox.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -373,7 +448,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>782, 416</value>
+    <value>947, 416</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>RSA Crypt</value>
